@@ -1,0 +1,28 @@
+platform :ios, '9.0'
+use_frameworks!
+swift_version = '3.0'
+
+target 'ReverSing' do
+    ##########################################################
+    ### Core
+    ##########################################################
+    pod 'SnapKit', '~> 3.0.2'                   # layout
+    #pod 'ChameleonFramework/Swift', '~> 2.1.0'  # color utility
+    pod 'Watchdog', '~> 3.0'                    # log blocking ui thread
+    pod 'QorumLogs', '~> 0.9'                             # logger
+    pod 'AsyncDisplayKit', :git=>'https://github.com/facebook/AsyncDisplayKit.git'  # faster alternative to UIKit
+    pod 'ReachabilitySwift', '~> 3'             # apple reachability rewriten in swift
+    pod 'PromiseKit', '~> 4.0.4'                  # js style promises
+    pod 'Bolts-Swift', '~> 1.3.0'
+    pod 'RealmSwift', '~> 2.0.3'
+    #pod 'HanekeSwift'                          # wait for swift 3
+    pod 'PermissionScope'                       # new way for permissions
+    pod 'R.swift'                               #
+    pod 'SwiftyUtils'
+    pod 'Sugar'
+    
+    ##########################################################
+    ### UI Controls
+    ##########################################################
+    pod 'FDWaveformView', '~> 2.0.0'
+end
