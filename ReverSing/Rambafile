@@ -15,6 +15,16 @@ project_file_path: ReverSing/Classes/Presentation/User Stories
 # The Xcode group path to new modules
 project_group_path: ReverSing/Classes/Presentation/User Stories
 
+### Tests generation settings section
+# The tests target name
+test_target: ReverSingTests
+
+# The file path for new tests
+test_file_path: ReverSingTests/Presentation/User Stories
+
+# The Xcode group path to new tests
+test_group_path: ReverSingTests/Presentation/User Stories
+
 ### Dependencies settings section
 podfile_path: Podfile
 

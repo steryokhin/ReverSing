@@ -14,7 +14,26 @@
 		2E3E5FBA1DCAD79F00198C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3E5FB71DCAD79F00198C9B /* LaunchScreen.storyboard */; };
 		2E3E5FBB1DCAD79F00198C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3E5FB81DCAD79F00198C9B /* Main.storyboard */; };
 		2E3E5FC21DCADB4E00198C9B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E5FC11DCADB4E00198C9B /* R.generated.swift */; };
+		2E48D43B1DCCA4F500F9B483 /* ReverSingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48D43A1DCCA4F500F9B483 /* ReverSingUITests.swift */; };
+		2E48D4491DCCA5B600F9B483 /* ReverSingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48D4481DCCA5B600F9B483 /* ReverSingTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E48D43D1DCCA4F500F9B483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E3E5F901DCAD61C00198C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E3E5F971DCAD61C00198C9B;
+			remoteInfo = ReverSing;
+		};
+		2E48D44B1DCCA5B600F9B483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E3E5F901DCAD61C00198C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E3E5F971DCAD61C00198C9B;
+			remoteInfo = ReverSing;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A07DEC5C7C40836C8A5A6E5 /* Pods-ReverSing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverSing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReverSing/Pods-ReverSing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +47,12 @@
 		2E3E5FC11DCADB4E00198C9B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		2E3E5FC31DCADBC300198C9B /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = SOURCE_ROOT; };
 		2E3E5FC61DCAE64C00198C9B /* Rambafile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rambafile; sourceTree = SOURCE_ROOT; };
+		2E48D4381DCCA4F500F9B483 /* ReverSingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverSingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48D43A1DCCA4F500F9B483 /* ReverSingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverSingUITests.swift; sourceTree = "<group>"; };
+		2E48D43C1DCCA4F500F9B483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E48D4461DCCA5B600F9B483 /* ReverSingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverSingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48D4481DCCA5B600F9B483 /* ReverSingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverSingTests.swift; sourceTree = "<group>"; };
+		2E48D44A1DCCA5B600F9B483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EEE9475ABD6248500DF438 /* Pods_ReverSing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverSing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C5C8A14C8198B6A4222AD /* Pods-ReverSing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverSing.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReverSing/Pods-ReverSing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +63,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5ABF003C2A641A73A07A47 /* Pods_ReverSing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48D4351DCCA4F500F9B483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48D4431DCCA5B600F9B483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				2E3E5F9A1DCAD61C00198C9B /* ReverSing */,
+				2E48D4391DCCA4F500F9B483 /* ReverSingUITests */,
+				2E48D4471DCCA5B600F9B483 /* ReverSingTests */,
 				2E3E5F991DCAD61C00198C9B /* Products */,
 				23C05087168CD35221100691 /* Pods */,
 				9C0D6FBEFD6323E352D9E280 /* Frameworks */,
@@ -67,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				2E3E5F981DCAD61C00198C9B /* ReverSing.app */,
+				2E48D4381DCCA4F500F9B483 /* ReverSingUITests.xctest */,
+				2E48D4461DCCA5B600F9B483 /* ReverSingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,12 +179,46 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		2E48D4391DCCA4F500F9B483 /* ReverSingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E48D43A1DCCA4F500F9B483 /* ReverSingUITests.swift */,
+				2E48D43C1DCCA4F500F9B483 /* Info.plist */,
+			);
+			path = ReverSingUITests;
+			sourceTree = "<group>";
+		};
+		2E48D4471DCCA5B600F9B483 /* ReverSingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8098FC43DD92B5C7AD7059B9 /* Presentation */,
+				2E48D4481DCCA5B600F9B483 /* ReverSingTests.swift */,
+				2E48D44A1DCCA5B600F9B483 /* Info.plist */,
+			);
+			path = ReverSingTests;
+			sourceTree = "<group>";
+		};
+		8098FC43DD92B5C7AD7059B9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B7F90FCCE6CAA02BE13D482F /* User Stories */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		9C0D6FBEFD6323E352D9E280 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				41EEE9475ABD6248500DF438 /* Pods_ReverSing.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7F90FCCE6CAA02BE13D482F /* User Stories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "User Stories";
 			sourceTree = "<group>";
 		};
 		C4052D48CADAC480DE052573 /* Presentation */ = {
@@ -183,6 +260,42 @@
 			productReference = 2E3E5F981DCAD61C00198C9B /* ReverSing.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2E48D4371DCCA4F500F9B483 /* ReverSingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48D4411DCCA4F500F9B483 /* Build configuration list for PBXNativeTarget "ReverSingUITests" */;
+			buildPhases = (
+				2E48D4341DCCA4F500F9B483 /* Sources */,
+				2E48D4351DCCA4F500F9B483 /* Frameworks */,
+				2E48D4361DCCA4F500F9B483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E48D43E1DCCA4F500F9B483 /* PBXTargetDependency */,
+			);
+			name = ReverSingUITests;
+			productName = ReverSingUITests;
+			productReference = 2E48D4381DCCA4F500F9B483 /* ReverSingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2E48D4451DCCA5B600F9B483 /* ReverSingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48D44D1DCCA5B600F9B483 /* Build configuration list for PBXNativeTarget "ReverSingTests" */;
+			buildPhases = (
+				2E48D4421DCCA5B600F9B483 /* Sources */,
+				2E48D4431DCCA5B600F9B483 /* Frameworks */,
+				2E48D4441DCCA5B600F9B483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E48D44C1DCCA5B600F9B483 /* PBXTargetDependency */,
+			);
+			name = ReverSingTests;
+			productName = ReverSingTests;
+			productReference = 2E48D4461DCCA5B600F9B483 /* ReverSingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +310,18 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5HRLMFUWVY;
 						ProvisioningStyle = Automatic;
+					};
+					2E48D4371DCCA4F500F9B483 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5HRLMFUWVY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E3E5F971DCAD61C00198C9B;
+					};
+					2E48D4451DCCA5B600F9B483 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5HRLMFUWVY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E3E5F971DCAD61C00198C9B;
 					};
 				};
 			};
@@ -214,6 +339,8 @@
 			projectRoot = "";
 			targets = (
 				2E3E5F971DCAD61C00198C9B /* ReverSing */,
+				2E48D4371DCCA4F500F9B483 /* ReverSingUITests */,
+				2E48D4451DCCA5B600F9B483 /* ReverSingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +353,20 @@
 				2E3E5FBB1DCAD79F00198C9B /* Main.storyboard in Resources */,
 				2E3E5FB91DCAD79F00198C9B /* Assets.xcassets in Resources */,
 				2E3E5FBA1DCAD79F00198C9B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48D4361DCCA4F500F9B483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48D4441DCCA5B600F9B483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +444,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E48D4341DCCA4F500F9B483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48D43B1DCCA4F500F9B483 /* ReverSingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48D4421DCCA5B600F9B483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48D4491DCCA5B600F9B483 /* ReverSingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E48D43E1DCCA4F500F9B483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E3E5F971DCAD61C00198C9B /* ReverSing */;
+			targetProxy = 2E48D43D1DCCA4F500F9B483 /* PBXContainerItemProxy */;
+		};
+		2E48D44C1DCCA5B600F9B483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E3E5F971DCAD61C00198C9B /* ReverSing */;
+			targetProxy = 2E48D44B1DCCA5B600F9B483 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2E3E5FA81DCAD61C00198C9B /* Debug */ = {
@@ -427,6 +597,60 @@
 			};
 			name = Release;
 		};
+		2E48D43F1DCCA4F500F9B483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5HRLMFUWVY;
+				INFOPLIST_FILE = ReverSingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = imacdev.ReverSingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ReverSing;
+			};
+			name = Debug;
+		};
+		2E48D4401DCCA4F500F9B483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5HRLMFUWVY;
+				INFOPLIST_FILE = ReverSingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = imacdev.ReverSingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ReverSing;
+			};
+			name = Release;
+		};
+		2E48D44E1DCCA5B600F9B483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5HRLMFUWVY;
+				INFOPLIST_FILE = ReverSingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = imacdev.ReverSingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReverSing.app/ReverSing";
+			};
+			name = Debug;
+		};
+		2E48D44F1DCCA5B600F9B483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5HRLMFUWVY;
+				INFOPLIST_FILE = ReverSingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = imacdev.ReverSingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReverSing.app/ReverSing";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +668,24 @@
 			buildConfigurations = (
 				2E3E5FAB1DCAD61C00198C9B /* Debug */,
 				2E3E5FAC1DCAD61C00198C9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E48D4411DCCA4F500F9B483 /* Build configuration list for PBXNativeTarget "ReverSingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48D43F1DCCA4F500F9B483 /* Debug */,
+				2E48D4401DCCA4F500F9B483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E48D44D1DCCA5B600F9B483 /* Build configuration list for PBXNativeTarget "ReverSingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48D44E1DCCA5B600F9B483 /* Debug */,
+				2E48D44F1DCCA5B600F9B483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
