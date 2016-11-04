@@ -18,9 +18,16 @@ target 'ReverSing' do
     #pod 'HanekeSwift'                          # wait for swift 3
     pod 'PermissionScope'                       # new way for permissions
     pod 'R.swift'                               #
-    pod 'SwiftyUtils'
+    pod 'SwiftyUtils'                           # utility methods
     pod 'Sugar'
-    
+
+    #### generamba dependencies
+    pod 'Typhoon'
+    pod 'OCMock'
+    pod 'RamblerTyphoonUtils'
+    pod 'ViperMcFlurry'
+
+
     ##########################################################
     ### UI Controls
     ##########################################################
