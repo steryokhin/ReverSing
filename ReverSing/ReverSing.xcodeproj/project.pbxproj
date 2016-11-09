@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D5ABF003C2A641A73A07A47 /* Pods_ReverSing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EEE9475ABD6248500DF438 /* Pods_ReverSing.framework */; };
-		2E3E5FB01DCAD73500198C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E5FAE1DCAD73500198C9B /* AppDelegate.swift */; };
 		2E3E5FB11DCAD73500198C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E5FAF1DCAD73500198C9B /* ViewController.swift */; };
 		2E3E5FB91DCAD79F00198C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3E5FB41DCAD79F00198C9B /* Assets.xcassets */; };
 		2E3E5FBA1DCAD79F00198C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3E5FB71DCAD79F00198C9B /* LaunchScreen.storyboard */; };
@@ -16,6 +15,14 @@
 		2E3E5FC21DCADB4E00198C9B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E5FC11DCADB4E00198C9B /* R.generated.swift */; };
 		2E48D43B1DCCA4F500F9B483 /* ReverSingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48D43A1DCCA4F500F9B483 /* ReverSingUITests.swift */; };
 		2E48D4491DCCA5B600F9B483 /* ReverSingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48D4481DCCA5B600F9B483 /* ReverSingTests.swift */; };
+		2EFF66F21DD0E7B8000BE215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66EB1DD0E7B8000BE215 /* AppDelegate.swift */; };
+		2EFF66F41DD0E7FB000BE215 /* AppDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66F31DD0E7FB000BE215 /* AppDelegateProtocol.swift */; };
+		2EFF66F61DD0E82B000BE215 /* ApplicationLayerAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66F51DD0E82B000BE215 /* ApplicationLayerAssemblyProtocol.swift */; };
+		2EFF66F91DD0E972000BE215 /* ThirdPartyAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66F81DD0E972000BE215 /* ThirdPartyAssemblyProtocol.swift */; };
+		2EFF66FB1DD0E98E000BE215 /* ThirdPartyManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66FA1DD0E98E000BE215 /* ThirdPartyManagerProtocol.swift */; };
+		2EFF66FD1DD0E9A2000BE215 /* ThirdPartyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66FC1DD0E9A2000BE215 /* ThirdPartyAssembly.swift */; };
+		2EFF67061DD1F3CE000BE215 /* ApplicationLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF67051DD1F3CE000BE215 /* ApplicationLayerAssembly.swift */; };
+		2EFF67071DD3582A000BE215 /* ThirdPartyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF66FE1DD0E9E3000BE215 /* ThirdPartyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,6 @@
 /* Begin PBXFileReference section */
 		0A07DEC5C7C40836C8A5A6E5 /* Pods-ReverSing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverSing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReverSing/Pods-ReverSing.debug.xcconfig"; sourceTree = "<group>"; };
 		2E3E5F981DCAD61C00198C9B /* ReverSing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverSing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3E5FAE1DCAD73500198C9B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E3E5FAF1DCAD73500198C9B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E3E5FB41DCAD79F00198C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E3E5FB71DCAD79F00198C9B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +59,14 @@
 		2E48D4461DCCA5B600F9B483 /* ReverSingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverSingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48D4481DCCA5B600F9B483 /* ReverSingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverSingTests.swift; sourceTree = "<group>"; };
 		2E48D44A1DCCA5B600F9B483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFF66EB1DD0E7B8000BE215 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EFF66F31DD0E7FB000BE215 /* AppDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateProtocol.swift; sourceTree = "<group>"; };
+		2EFF66F51DD0E82B000BE215 /* ApplicationLayerAssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationLayerAssemblyProtocol.swift; sourceTree = "<group>"; };
+		2EFF66F81DD0E972000BE215 /* ThirdPartyAssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartyAssemblyProtocol.swift; sourceTree = "<group>"; };
+		2EFF66FA1DD0E98E000BE215 /* ThirdPartyManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartyManagerProtocol.swift; sourceTree = "<group>"; };
+		2EFF66FC1DD0E9A2000BE215 /* ThirdPartyAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartyAssembly.swift; sourceTree = "<group>"; };
+		2EFF66FE1DD0E9E3000BE215 /* ThirdPartyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdPartyManager.swift; path = Implementation/ThirdPartyManager.swift; sourceTree = "<group>"; };
+		2EFF67051DD1F3CE000BE215 /* ApplicationLayerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationLayerAssembly.swift; sourceTree = "<group>"; };
 		41EEE9475ABD6248500DF438 /* Pods_ReverSing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverSing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C5C8A14C8198B6A4222AD /* Pods-ReverSing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverSing.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReverSing/Pods-ReverSing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,9 +141,10 @@
 		2E3E5FAD1DCAD73500198C9B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2E3E5FAE1DCAD73500198C9B /* AppDelegate.swift */,
+				2EFF66E81DD0E7B8000BE215 /* Application */,
+				2EFF66EC1DD0E7B8000BE215 /* Core */,
+				2EFF66F01DD0E7B8000BE215 /* Presentation */,
 				2E3E5FAF1DCAD73500198C9B /* ViewController.swift */,
-				C4052D48CADAC480DE052573 /* Presentation */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -198,6 +213,92 @@
 			path = ReverSingTests;
 			sourceTree = "<group>";
 		};
+		2EFF66E81DD0E7B8000BE215 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF66F51DD0E82B000BE215 /* ApplicationLayerAssemblyProtocol.swift */,
+				2EFF66E91DD0E7B8000BE215 /* AppDelegate */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2EFF66E91DD0E7B8000BE215 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF66F31DD0E7FB000BE215 /* AppDelegateProtocol.swift */,
+				2EFF67041DD1F3CE000BE215 /* Assembly */,
+				2EFF66EA1DD0E7B8000BE215 /* Implementation */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2EFF66EA1DD0E7B8000BE215 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF66EB1DD0E7B8000BE215 /* AppDelegate.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		2EFF66EC1DD0E7B8000BE215 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF67011DD15309000BE215 /* Assemblies */,
+				2EFF66ED1DD0E7B8000BE215 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2EFF66ED1DD0E7B8000BE215 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF66EE1DD0E7B8000BE215 /* 3rd Party */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2EFF66EE1DD0E7B8000BE215 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF66FA1DD0E98E000BE215 /* ThirdPartyManagerProtocol.swift */,
+				2EFF66FE1DD0E9E3000BE215 /* ThirdPartyManager.swift */,
+				2EFF66F81DD0E972000BE215 /* ThirdPartyAssemblyProtocol.swift */,
+				2EFF66FC1DD0E9A2000BE215 /* ThirdPartyAssembly.swift */,
+			);
+			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		2EFF66F01DD0E7B8000BE215 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF66F11DD0E7B8000BE215 /* User Stories */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2EFF66F11DD0E7B8000BE215 /* User Stories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "User Stories";
+			sourceTree = "<group>";
+		};
+		2EFF67011DD15309000BE215 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		2EFF67041DD1F3CE000BE215 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF67051DD1F3CE000BE215 /* ApplicationLayerAssembly.swift */,
+			);
+			name = Assembly;
+			path = ReverSing/Classes/Application/Assembly;
+			sourceTree = SOURCE_ROOT;
+		};
 		8098FC43DD92B5C7AD7059B9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,21 +316,6 @@
 			sourceTree = "<group>";
 		};
 		B7F90FCCE6CAA02BE13D482F /* User Stories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "User Stories";
-			sourceTree = "<group>";
-		};
-		C4052D48CADAC480DE052573 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				CF6CEA36D1E1A9410DFDED10 /* User Stories */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		CF6CEA36D1E1A9410DFDED10 /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -303,7 +389,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = iMacDev;
 				TargetAttributes = {
 					2E3E5F971DCAD61C00198C9B = {
@@ -438,8 +524,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFF67071DD3582A000BE215 /* ThirdPartyManager.swift in Sources */,
+				2EFF66F21DD0E7B8000BE215 /* AppDelegate.swift in Sources */,
+				2EFF66F61DD0E82B000BE215 /* ApplicationLayerAssemblyProtocol.swift in Sources */,
+				2EFF66FB1DD0E98E000BE215 /* ThirdPartyManagerProtocol.swift in Sources */,
 				2E3E5FB11DCAD73500198C9B /* ViewController.swift in Sources */,
-				2E3E5FB01DCAD73500198C9B /* AppDelegate.swift in Sources */,
+				2EFF66F91DD0E972000BE215 /* ThirdPartyAssemblyProtocol.swift in Sources */,
+				2EFF67061DD1F3CE000BE215 /* ApplicationLayerAssembly.swift in Sources */,
+				2EFF66F41DD0E7FB000BE215 /* AppDelegateProtocol.swift in Sources */,
+				2EFF66FD1DD0E9A2000BE215 /* ThirdPartyAssembly.swift in Sources */,
 				2E3E5FC21DCADB4E00198C9B /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +587,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -544,6 +638,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -573,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A07DEC5C7C40836C8A5A6E5 /* Pods-ReverSing.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5HRLMFUWVY;
 				INFOPLIST_FILE = ReverSing/Info.plist;
@@ -587,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE5C5C8A14C8198B6A4222AD /* Pods-ReverSing.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5HRLMFUWVY;
 				INFOPLIST_FILE = ReverSing/Info.plist;

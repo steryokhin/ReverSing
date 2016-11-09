@@ -9,12 +9,16 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegateProtocol {
 
     var window: UIWindow?
 
+    var thirdPartyManager: ThirdPartyManagerProtocol!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        self.thirdPartyManager.configureWithAppDelegate(self, launchOptions: launchOptions)
+        
         // Override point for customization after application launch.
         return true
     }

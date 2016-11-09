@@ -24,7 +24,7 @@ target 'ReverSing' do
     #### generamba dependencies
     pod 'Typhoon'
     pod 'OCMock'
-    pod 'RamblerTyphoonUtils'
+    pod 'RamblerTyphoonUtils/AssemblyCollector'
     pod 'ViperMcFlurry'
 
 

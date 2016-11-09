@@ -31,11 +31,7 @@ PODS:
   - R.swift (3.1.0):
     - R.swift.Library (~> 3.0.2)
   - R.swift.Library (3.0.2)
-  - RamblerTyphoonUtils (1.5.0):
-    - RamblerTyphoonUtils/AssemblyCollector (= 1.5.0)
-    - RamblerTyphoonUtils/AssemblyTesting (= 1.5.0)
   - RamblerTyphoonUtils/AssemblyCollector (1.5.0)
-  - RamblerTyphoonUtils/AssemblyTesting (1.5.0)
   - ReachabilitySwift (3)
   - Realm (2.0.3):
     - Realm/Headers (= 2.0.3)
@@ -60,7 +56,7 @@ DEPENDENCIES:
   - PromiseKit (~> 4.0.4)
   - QorumLogs (~> 0.9)
   - R.swift
-  - RamblerTyphoonUtils
+  - RamblerTyphoonUtils/AssemblyCollector
   - ReachabilitySwift (~> 3)
   - RealmSwift (~> 2.0.3)
   - SnapKit (~> 3.0.2)
@@ -102,6 +98,6 @@ SPEC CHECKSUMS:
   ViperMcFlurry: 701bc3ad8d188b1f1e157ec0ddf4e77184de88b5
   Watchdog: 141185b6b3a332a9f5721ea42dfa9681cf2d7c6b
 
-PODFILE CHECKSUM: bfd845d85701903923267797aebe5c8bd6edaddc
+PODFILE CHECKSUM: ec35d44b933a7a8c153f093a391d5f9c15f0d3e5
 
 COCOAPODS: 1.1.1
