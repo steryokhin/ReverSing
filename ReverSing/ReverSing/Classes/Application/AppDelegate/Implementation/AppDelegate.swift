@@ -10,14 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegateProtocol {
-
     var window: UIWindow?
+
+    /// We wants navigation controller to be root of our view hierarchy. It created and designed from asembly
+    var rootNavigationController: UINavigationController!
 
     var thirdPartyManager: ThirdPartyManagerProtocol!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        self.thirdPartyManager.configureWithAppDelegate(self, launchOptions: launchOptions)
+        self.thirdPartyManager.configure()
         
         // Override point for customization after application launch.
         return true

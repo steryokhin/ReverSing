@@ -11,5 +11,5 @@ import Foundation
 
 @objc
 protocol ThirdPartyManagerProtocol: class {
-    func configureWithAppDelegate(_ appDelegate: UIApplicationDelegate, launchOptions: [UIApplicationLaunchOptionsKey: Any]?)
+    func configure()
 }

@@ -36,8 +36,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `HomeViewController`.
+    static let homeViewController = _R.nib._HomeViewController()
+    
+    /// `UINib(name: "HomeViewController", in: bundle)`
+    static func homeViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.homeViewController)
+    }
+    
     fileprivate init() {}
   }
   
@@ -78,7 +86,7 @@ struct R: Rswift.Validatable {
   
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
-      // There are no resources to validate
+      try _R.validate()
     }
     
     fileprivate init() {}
@@ -87,12 +95,31 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R {
+struct _R: Rswift.Validatable {
+  static func validate() throws {
+    try storyboard.validate()
+  }
+  
   struct nib {
+    struct _HomeViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "HomeViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
-  struct storyboard {
+  struct storyboard: Rswift.Validatable {
+    static func validate() throws {
+      try main.validate()
+    }
+    
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
       typealias InitialController = UIKit.UIViewController
       
@@ -102,11 +129,18 @@ struct _R {
       fileprivate init() {}
     }
     
-    struct main: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = ViewController
-      
+    struct main: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
+      let homeViewControllerID = StoryboardViewControllerResource<HomeViewController>(identifier: "HomeViewControllerID")
       let name = "Main"
+      
+      func homeViewControllerID(_: Void = ()) -> HomeViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: homeViewControllerID)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.main().homeViewControllerID() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewControllerID' could not be loaded from storyboard 'Main' as 'HomeViewController'.") }
+      }
       
       fileprivate init() {}
     }

@@ -12,11 +12,14 @@ import UIKit
 import Watchdog
 import QorumLogs
 
+/**
+ * Loading and initialising third part libraries
+ */
 @objc
 class ThirdPartyManager: NSObject, ThirdPartyManagerProtocol {
     var watchdog: Watchdog?
     
-    func configureWithAppDelegate(_ appDelegate: UIApplicationDelegate, launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+    func configure() {
         self.setupWatchdog()
         self.setupLogging()
     }
@@ -26,6 +29,12 @@ class ThirdPartyManager: NSObject, ThirdPartyManagerProtocol {
     }
     
     func setupLogging() {
+#if DEBUG
+        //TODO: 1 and 3 ==> make constants
+        QorumLogs.minimumLogLevelShown = 1
+#else
+        QorumLogs.minimumLogLevelShown = 3
+#endif
         QorumLogs.enabled = true
         QorumLogs.test()
     }
