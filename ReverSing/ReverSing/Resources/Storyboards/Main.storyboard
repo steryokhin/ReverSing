@@ -19,7 +19,20 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="481" y="-28"/>
+            <point key="canvasLocation" x="-394" y="-296"/>
+        </scene>
+        <!--Recordoriginal View Controller-->
+        <scene sceneID="0xU-Nc-UJ9">
+            <objects>
+                <viewController storyboardIdentifier="RecordOriginalViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3IY-Ul-PLX" customClass="RecordOriginalViewController" customModule="ReverSing" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3AJ-es-1mJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="zdw-04-rdq" customClass="RecordOriginalModuleInitializer" customModule="ReverSing" customModuleProvider="target">
+                    <connections>
+                        <outlet property="recordoriginalViewController" destination="3IY-Ul-PLX" id="PlS-Yy-BqY"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="448" y="-290"/>
         </scene>
     </scenes>
 </document>

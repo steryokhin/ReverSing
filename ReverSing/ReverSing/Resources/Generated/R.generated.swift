@@ -36,14 +36,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
     /// Nib `HomeViewController`.
     static let homeViewController = _R.nib._HomeViewController()
+    /// Nib `RecordOriginalViewController`.
+    static let recordOriginalViewController = _R.nib._RecordOriginalViewController()
     
     /// `UINib(name: "HomeViewController", in: bundle)`
     static func homeViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.homeViewController)
+    }
+    
+    /// `UINib(name: "RecordOriginalViewController", in: bundle)`
+    static func recordOriginalViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.recordOriginalViewController)
     }
     
     fileprivate init() {}
@@ -112,6 +119,17 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct _RecordOriginalViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "RecordOriginalViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -133,12 +151,18 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let homeViewControllerID = StoryboardViewControllerResource<HomeViewController>(identifier: "HomeViewControllerID")
       let name = "Main"
+      let recordOriginalViewControllerID = StoryboardViewControllerResource<RecordOriginalViewController>(identifier: "RecordOriginalViewControllerID")
       
       func homeViewControllerID(_: Void = ()) -> HomeViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: homeViewControllerID)
       }
       
+      func recordOriginalViewControllerID(_: Void = ()) -> RecordOriginalViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: recordOriginalViewControllerID)
+      }
+      
       static func validate() throws {
+        if _R.storyboard.main().recordOriginalViewControllerID() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'recordOriginalViewControllerID' could not be loaded from storyboard 'Main' as 'RecordOriginalViewController'.") }
         if _R.storyboard.main().homeViewControllerID() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewControllerID' could not be loaded from storyboard 'Main' as 'HomeViewController'.") }
       }
       

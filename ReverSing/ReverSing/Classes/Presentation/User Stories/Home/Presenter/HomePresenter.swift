@@ -6,21 +6,26 @@
 //  Copyright © 2016 iMacDev. All rights reserved.
 //
 
+import ViperMcFlurry
 import QorumLogs
 
-class HomePresenter: HomeModuleInput, HomeViewOutput, HomeInteractorOutput {
+class HomePresenter: NSObject, HomeModuleInput, HomeViewOutput, HomeInteractorOutput, RamblerViperModuleOutput, RecordOriginalModuleOutput {
 
     weak var view: HomeViewInput!
     var interactor: HomeInteractorInput!
     var router: HomeRouterInput!
 
     func viewIsReady() {
-        QL2("Home hierarchy loaded")
+        
     }
     
     func play() {
-        QL2("Play button pressed")
+        self.router.startGame(delegate: self)
+    }
+    
+    //MARK: RecordOriginalModuleOutput
+    func cancelRecordOriginal(module: RamblerViperModuleTransitionHandlerProtocol) {
         
-        self.router.startGame()
+        module.closeCurrentModule!(true)
     }
 }

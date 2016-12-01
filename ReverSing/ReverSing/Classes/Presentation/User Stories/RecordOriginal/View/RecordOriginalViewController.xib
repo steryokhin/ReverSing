@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordOriginalViewController" customModule="ReverSing" customModuleProvider="target">
+            <connections>
+                <outlet property="playerButton" destination="uqE-1g-ia5" id="aZt-cB-XCC"/>
+                <outlet property="playerOutputView" destination="PKd-xb-aE5" id="bIN-o5-u7H"/>
+                <outlet property="recorderButton" destination="U74-PK-pxw" id="u6m-Lb-GCQ"/>
+                <outlet property="recorderOutputHolderView" destination="grU-eD-QQb" id="4LA-ej-Myd"/>
+                <outlet property="view" destination="gz8-di-TgU" id="oiU-Pw-NUQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gz8-di-TgU">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grU-eD-QQb" customClass="EZAudioPlot">
+                    <rect key="frame" x="16" y="77" width="343" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Xdw-gW-9L9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.1333333333" green="0.75294117650000003" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="gain">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldFill" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U74-PK-pxw">
+                    <rect key="frame" x="171" y="224" width="32" height="30"/>
+                    <state key="normal" title="start">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startStopRecordingAction" destination="-1" eventType="touchUpInside" id="Pbp-PP-CSv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqE-1g-ia5">
+                    <rect key="frame" x="173" y="414" width="30" height="30"/>
+                    <state key="normal" title="Play">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startStopPlayingAction" destination="-1" eventType="touchUpInside" id="v2p-C4-qxr"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKd-xb-aE5" userLabel="Player Wave view" customClass="FDWaveformView" customModule="FDWaveformView">
+                    <rect key="frame" x="20" y="278" width="343" height="128"/>
+                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="progressSamples">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="zoomStartSamples">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="zoomEndSamples">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PKd-xb-aE5" firstAttribute="centerX" secondItem="gz8-di-TgU" secondAttribute="centerX" constant="4" id="3aP-6L-f7s"/>
+                <constraint firstItem="grU-eD-QQb" firstAttribute="leading" secondItem="gz8-di-TgU" secondAttribute="leading" constant="16" id="BTt-5S-6UI"/>
+                <constraint firstItem="grU-eD-QQb" firstAttribute="top" secondItem="gz8-di-TgU" secondAttribute="top" constant="77" id="CoD-Ah-wh2"/>
+                <constraint firstItem="PKd-xb-aE5" firstAttribute="width" secondItem="grU-eD-QQb" secondAttribute="width" id="ELm-mI-5jO"/>
+                <constraint firstItem="PKd-xb-aE5" firstAttribute="height" secondItem="grU-eD-QQb" secondAttribute="height" id="RkW-Sb-wH0"/>
+                <constraint firstItem="U74-PK-pxw" firstAttribute="centerX" secondItem="gz8-di-TgU" secondAttribute="centerX" id="UE7-rr-9MP"/>
+                <constraint firstItem="uqE-1g-ia5" firstAttribute="top" secondItem="PKd-xb-aE5" secondAttribute="bottom" constant="8" id="UNU-2e-OcH"/>
+                <constraint firstItem="U74-PK-pxw" firstAttribute="top" secondItem="grU-eD-QQb" secondAttribute="bottom" constant="19" id="Xkj-fw-mUA"/>
+                <constraint firstAttribute="trailing" secondItem="grU-eD-QQb" secondAttribute="trailing" constant="16" id="eRs-8D-gjH"/>
+                <constraint firstItem="uqE-1g-ia5" firstAttribute="centerX" secondItem="gz8-di-TgU" secondAttribute="centerX" constant="0.5" id="w3u-NW-i61"/>
+                <constraint firstItem="PKd-xb-aE5" firstAttribute="top" secondItem="U74-PK-pxw" secondAttribute="bottom" constant="24" id="z66-FY-CBs"/>
+            </constraints>
+            <point key="canvasLocation" x="-271.5" y="30.5"/>
+        </view>
+    </objects>
+</document>

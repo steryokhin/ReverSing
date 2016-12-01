@@ -1,37 +1,37 @@
 //
-//  HomeHomeConfigurator.swift
+//  RecordOriginalRecordOriginalConfigurator.swift
 //  ReverSing
 //
-//  Created by Sergey Teryokhin on 15/11/2016.
+//  Created by Sergey Teryokhin on 16/11/2016.
 //  Copyright © 2016 iMacDev. All rights reserved.
 //
 
 import UIKit
-import Typhoon
 
-class HomeModuleConfigurator {
+class RecordOriginalModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-        if let viewController = viewInput as? HomeViewController {
+
+        if let viewController = viewInput as? RecordOriginalViewController {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: HomeViewController) {
+    private func configure(viewController: RecordOriginalViewController) {
 
-        let router = HomeRouter()
+        let router = RecordOriginalRouter()
         router.transitionHandler = viewController
 
-        let presenter = HomePresenter()
+        let presenter = RecordOriginalPresenter()
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = HomeInteractor()
+        let interactor = RecordOriginalInteractor()
         interactor.output = presenter
 
         presenter.interactor = interactor
         viewController.output = presenter
+        viewController.moduleInput = presenter
     }
 
-    
 }

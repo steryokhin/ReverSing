@@ -6,8 +6,9 @@
 //  Copyright © 2016 iMacDev. All rights reserved.
 //
 
+import ViperMcFlurry
 import Foundation
 
 protocol HomeRouterInput {
-    func startGame()
+    func startGame(delegate: RamblerViperModuleOutput)
 }

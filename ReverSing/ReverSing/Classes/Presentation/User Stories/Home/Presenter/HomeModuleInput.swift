@@ -6,6 +6,8 @@
 //  Copyright © 2016 iMacDev. All rights reserved.
 //
 
-protocol HomeModuleInput: class {
+import ViperMcFlurry
+
+protocol HomeModuleInput: class, RamblerViperModuleInput {
 
 }

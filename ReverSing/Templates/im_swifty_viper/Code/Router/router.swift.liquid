@@ -6,6 +6,32 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-class {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+import ViperMcFlurry
 
+class {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+    let storyBoard = R.storyboard.YOURSTORYBOARD()
+    let moduleID = R.storyboard.main.YOURCONTROLLERID.identifier
+
+    var transitionHandler: RamblerViperModuleTransitionHandlerProtocol!
+
+    var transitionModuleFactory: RamblerViperModuleFactory {
+    let factory = RamblerViperModuleFactory(storyboard: storyBoard, andRestorationId: moduleID)
+        return factory!
+    }
+
+// Navigation example with factory module
+//    func nextModule() {
+//        transitionHandler.openModule!(usingFactory: transitionModuleFactory) { sourceModuleTransitionHandler, destinationModuleTransitionHandler in
+//            let sourceVC = sourceModuleTransitionHandler as! UIViewController
+//            let destinationVC = destinationModuleTransitionHandler as! UIViewController sourceVC.navigationController?.pushViewController(destinationVC, animated: true)
+//        }.thenChain { moduleInput in
+//            guard let myModuleInput = moduleInput as? {{ module_info.name }}ModuleInput else {
+//                return nil
+//            }
+//
+//            myModuleInput.configure()
+//
+//            return nil
+//        }
+//    }
 }

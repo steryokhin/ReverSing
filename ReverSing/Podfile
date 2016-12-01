@@ -6,30 +6,34 @@ target 'ReverSing' do
     ##########################################################
     ### Core
     ##########################################################
+    pod 'AudioKit'                              # Audio recording and visualisation
+    pod 'AudioPlayerSwift'                      # Simple audio player interface
     pod 'SnapKit', '~> 3.0.2'                   # layout
-    #pod 'ChameleonFramework/Swift', '~> 2.1.0'  # color utility
+    #pod 'ChameleonFramework/Swift', '~> 2.1.0' # color utility TODO: fix it
     pod 'Watchdog', '~> 3.0'                    # log blocking ui thread
-    pod 'QorumLogs', '~> 0.9'                             # logger
+    pod 'QorumLogs', '~> 0.9'                   # logger TODO: replace with other framework
     pod 'AsyncDisplayKit', :git=>'https://github.com/facebook/AsyncDisplayKit.git'  # faster alternative to UIKit
     pod 'ReachabilitySwift', '~> 3'             # apple reachability rewriten in swift
-    pod 'PromiseKit', '~> 4.0.4'                  # js style promises
+    pod 'PromiseKit', '~> 4.0.4'                # js style promises
     pod 'Bolts-Swift', '~> 1.3.0'
     pod 'RealmSwift', '~> 2.0.3'
-    #pod 'HanekeSwift'                          # wait for swift 3
+    #pod 'HanekeSwift'                          # wait for swift 3: generic cache for iOS
     pod 'PermissionScope'                       # new way for permissions
     pod 'R.swift'                               #
+    
+    ##### Utility
     pod 'SwiftyUtils'                           # utility methods
-    pod 'Sugar'
+    pod 'Sugar'                                 # usefull extensions
 
     #### generamba dependencies
-    pod 'Typhoon'
-    pod 'OCMock'
-    pod 'RamblerTyphoonUtils/AssemblyCollector'
-    pod 'ViperMcFlurry'
-
+    pod 'Typhoon'                               # depdendency injection (replace with swinject?)
+    pod 'OCMock'                                # testing
+    pod 'RamblerTyphoonUtils/AssemblyCollector' #
+    pod 'ViperMcFlurry'                         #
 
     ##########################################################
     ### UI Controls
     ##########################################################
-    pod 'FDWaveformView', '~> 2.0.0'
+    #pod 'FDWaveformView'                        # draw wave from the file
+    pod 'FDWaveformView', :git=>'https://github.com/steryokhin/FDWaveformView' # fix background thread layout
 end
